@@ -46,7 +46,15 @@ const miniLetters = {
       "Je t'aime et demeure tienne pour toujours.\n" +
       "Joyeux anniversaire 💌!\n" +
       "Cécilia",
-  Sarah: "Joyeux anniversaire Sarah 🎉\n\nProfite à fond de cette journée.",
+  Sarah: "Mon dieu 11 ans d'amitié (fais le calcul ça fait plus de la moitié de nos vies omg).\n" +
+      " Je pense qu'on peut remercier Alex et Gabriel de nous avoir jetées dans les bras l'une de l'autre.\n" +
+      " On a littéralement grandi ensemble et je pourrais pas être plus fière de la femme que tu es devenue.\n" +
+      " Ta générosité, ton sens de l'écoute, ta sincérité, ton humour (et encore bien d'autres qualités) font que tu es un modèle pour moi.\n" +
+      " Je te souhaite une année remplie de bonheur, d'amour, ET D'ARGENT (dieu sait que ça manque cruellement ces temps-ci).\n" +
+      " Continue sur ta lancée, le positif attire le positif ! Passe une belle journée d'anniversaire :)\n" +
+      "On t'aime fort,\n" +
+      "Je t'aime fort ! (je t'épargne le \"bébé rarah cupcake\" mais j'en pense pas moins hehe)\n" +
+      "Sarah ",
   MamanBenoit: "Une pensée pleine de soleil pour toi ☀️",
   Gabriel: "Continue de briller comme tu sais si bien le faire ✨",
   Emma: "Plein d’amour et de belles surprises aujourd’hui 💕",
