@@ -87,8 +87,12 @@ const miniLetters = {
     image: "images/gabriel.jpg"
   },
   Emma: {
-    text: "Plein d’amour et de belles surprises aujourd’hui 💕",
-    image: ""
+    text: "coucou ma sasou ! Et oui c’est encore ta sœur que tu as tant détestée 😘.\n" +
+        "J’espère que tu vas adorer ta journée d’anniversaire!\n" +
+        "Je suis très fière de toi et je te fais plein plein de gros bisous !\n"+
+        "Je te souhaite plein de bonheur dans ta petite vie bien débordé et oublie pas on va voir bruno mars !!!"+
+        "Emma 💕",
+    image: "images/emmav2.jpg"
   },
   Alexandre: {
     text: "À ma petite sœur à qui je ne démontre pas beaucoup d’affection, mais qui compte plus que tout :\n" +
@@ -139,9 +143,10 @@ const miniLetters = {
 
 // ===== DIAPORAMA =====
 const slides = ["images/17.jpeg","images/gabriel.jpg","images/lucie.jpg", "images/amelie.jpeg",
-    "images/anniv.jpeg","images/17v2.jpeg","images/matthias.jpg", "images/cookie.jpg", "images/anna.jpg","images/laura.jpg",
+    "images/anniv.jpeg","images/17v2.jpeg","images/matthias.jpg", "images/emmav2.jpg","images/cookie.jpg",
+    "images/anna.jpg","images/laura.jpg",
     "images/vielles.jpeg","images/luciev2.jpg","images/bowling.jpeg","images/bac.jpg","images/cinev2.png",
-    "images/trio.jpg","images/spa.jpeg","images/finneas.jpeg","images/bal.jpg","images/laurav2.jpg",
+    "images/trio.jpg","images/spa.jpeg","images/emma.jpg","images/finneas.jpeg","images/bal.jpg","images/laurav2.jpg",
     "images/monet.jpeg","images/bebe.jpg","images/montmartre.jpeg","images/caddie.jpg","images/monetv2.jpeg",
     "images/moulinrouge.jpeg","images/nico.jpeg","images/lycee.jpg","images/pizza.jpeg","images/polaroid.jpeg"];
 let currentSlide = 0;
