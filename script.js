@@ -61,7 +61,7 @@ const miniLetters = {
       "Sarah ",
     image: "images/cookie.jpg"
   },
-  MamanBenoit: {
+  Maman: {
     text: "Ma chérie,\n" +
         "22 ans aujourd’hui… et toujours cette même émotion quand je pense à la femme que tu es devenue. Tu as grandi tellement vite!\n" +
         "Tu es forte, sensible, lumineuse, et tellement plus que ce que tu crois parfois.\n" +
@@ -69,7 +69,14 @@ const miniLetters = {
         "Que cette nouvelle année t’apporte confiance, douceur et tout ce que tu mérites dans ta vie.\n" +
         "Je t’aime plus que les mots ne pourront jamais le dire.\n" +
         "Joyeux anniversaire ma douce🤍\n" +
-        "Maman et beau papa.☀️",
+        "Maman.️",
+    image: "images/maman.jpg"
+  },
+  Benoit: {
+    text: "Sarah, voici encore une année qui s’est écoulé…\n" +
+        "Sache que tu pourras toujours compter sur nous, nous serons toujours présents même dans les moments difficiles, sache que nous serons là pour nous dresser devant les obstacles que la vie sèmera sur ta route.\n" +
+        "Nous te souhaitons un joyeux anniversaire et nous t’aimons très fort.\n" +
+        "Beau papa🤍️",
     image: "images/maman.jpg"
   },
   Gabriel: {
