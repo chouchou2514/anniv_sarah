@@ -45,7 +45,7 @@ const miniLetters = {
       "Tu es la plus belle chose qu'il me soit arrivé dans la vie, ma batterie sociale est et restera toujours pleine avec toi!\n" +
       "Je t'aime et demeure tienne pour toujours.\n" +
       "Joyeux anniversaire 💌!\n" +
-      "Cécilia",
+      "-Cécilia",
   Sarah: "Mon dieu 11 ans d'amitié (fais le calcul ça fait plus de la moitié de nos vies omg).\n" +
       " Je pense qu'on peut remercier Alex et Gabriel de nous avoir jetées dans les bras l'une de l'autre.\n" +
       " On a littéralement grandi ensemble et je pourrais pas être plus fière de la femme que tu es devenue.\n" +
@@ -54,30 +54,41 @@ const miniLetters = {
       " Continue sur ta lancée, le positif attire le positif ! Passe une belle journée d'anniversaire :)\n" +
       "On t'aime fort,\n" +
       "Je t'aime fort ! (je t'épargne le \"bébé rarah cupcake\" mais j'en pense pas moins hehe)\n" +
-      "Sarah ",
+      "-Sarah ",
   MamanBenoit: "Une pensée pleine de soleil pour toi ☀️",
-  Gabriel: "Continue de briller comme tu sais si bien le faire ✨",
+  Gabriel: "Ma chère sœur,\n"+" je te souhaite un très joyeux anniversaire en ce jour d’anniversaire qu’est le tient (d’anniversaire)\n"+
+      " bisous ma chère sœur et joyeux anniversaire le jour de ton anniversaire de ta naissance d’anniversaire,\n"+
+      " voilà en fait, on fête ta naissance, joyeux 22ème naissance\n"+
+      "-Gabriel",
   Emma: "Plein d’amour et de belles surprises aujourd’hui 💕",
-  AlexandreLucie: "Que cette année soit encore meilleure que la précédente !",
+  Alexandre: "À ma petite sœur à qui je ne démontre pas beaucoup d’affection, mais qui compte plus que tout :\n"+
+      "tu deviens petit à petit une femme accomplie, toujours chiante, mais on peut pas te demander la lune non plus.\n"+
+      "Joyeux anniversaire, j’espère que t’accompliras de grandes choses, à défaut de faire la vaisselle.\n"+
+      "Je t’aime fort\n"+
+      "-Alexandre",
+  Lucie: "Je te souhaite un très heureux anniversaire, je t’envoie tout mon amour.\n"+
+      "T’es une personne formidable que j’aime de tout mon cœur.\n"+
+      "-Lucie",
   Chloe: "Coucou ma Sarah, je te souhaites un très bel anniversaire, tant de belles choses vécu à tes côtés, je suis fière des personnes que nous sommes aujourd’hui. \n" +
-      "Avec tous ces moments passés à tes côtés, et toutes les épreuves plus ou moins faciles, en tout cas sache que je t’aime fort, plein de bonnes choses 🥰❤️",
+      "Avec tous ces moments passés à tes côtés, et toutes les épreuves plus ou moins faciles, en tout cas sache que je t’aime fort, plein de bonnes choses 🥰❤️\n"+
+      "-Chloé",
   Laura: "Coucou Sarah !😘 \n\nJe te souhaite un joyeux Anniversaire !! La star a déjà 22 ans 🤯\n" +
       "Entre team Verseau on se comprends, on a envie d’indépendance, de trouver sa voie et profiter de la viiiie (en vrai un peu comme tout le monde nan ?) \n" +
       "Je t’adore trop trop même si on se voit peut, d’ailleurs faut qu on change vite ça !! Reste aussi magnifique et sincère, gentille et adorable ! Je te souhaite que tu bonheur parce que tu le mérite tellement 🩷 Gros bisous et passe une douce journée ☺️\n" +
-      "Laura",
+      "-Laura",
   Matthias: "Du Canada à l’Italie et surtout en passant par Mambouhans, bon anniversaire Pepette!\n" +
       "Gros bisous de la part de Kamy aussi ! (C’est faux il mord).\n" +
       " Je t’aime 😘\n" +
-      "Matthias",
+      "-Matthias",
   AnnaEve: "Joyeux anniversaire Sarah, même si on s'est pas bcp vue t'es vraiment une super personne j'espère qu'on aura l'occasion de ce revoir et j'espère surtout que tu vas bien t'amuser en ce jour de fête \n" +
             "-Æ",
-  Kamy : "Miaou",
+  Kamy : "Miaou ",
 };
 
 
 
 // ===== DIAPORAMA =====
-const slides = ["images/17.jpeg","images/anniv.jpeg","images/17v2.jpeg","images/17v2.jpeg","images/matthias.jpg", "images/anna.jpg","images/laura.jpg","images/vielles.jpeg","images/bowling.jpeg","images/bac.jpg","images/cinev2.png","images/spa.jpeg","images/finneas.jpeg","images/bal.jpg","images/laurav2.jpg","images/monet.jpeg","images/bebe.jpg","images/montmartre.jpeg","images/caddie.jpg","images/monetv2.jpeg","images/moulinrouge.jpeg","images/cookie.jpg","images/nico.jpeg","images/lycee.jpg","images/pizza.jpeg","images/polaroid.jpeg"];
+const slides = ["images/17.jpeg","images/gabriel.jpg","images/lucie.jpg", "images/anniv.jpeg","images/17v2.jpeg","images/17v2.jpeg","images/matthias.jpg", "images/anna.jpg","images/laura.jpg","images/vielles.jpeg","images/luciev2.jpg","images/bowling.jpeg","images/bac.jpg","images/cinev2.png","images/trio.jpg","images/spa.jpeg","images/finneas.jpeg","images/bal.jpg","images/laurav2.jpg","images/monet.jpeg","images/bebe.jpg","images/montmartre.jpeg","images/caddie.jpg","images/monetv2.jpeg","images/moulinrouge.jpeg","images/cookie.jpg","images/nico.jpeg","images/lycee.jpg","images/pizza.jpeg","images/polaroid.jpeg"];
 let currentSlide = 0;
 function nextSlide(){ currentSlide=(currentSlide+1)%slides.length; document.getElementById("sliderImage").src=slides[currentSlide]; }
 function prevSlide(){ currentSlide=(currentSlide-1+slides.length)%slides.length; document.getElementById("sliderImage").src=slides[currentSlide]; }
