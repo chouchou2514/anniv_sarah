@@ -61,6 +61,8 @@ const miniLetters = {
       "Gros bisous de la part de Kamy aussi ! (C’est faux il mord).\n" +
       " Je t’aime 😘\n" +
       "Matthias",
+  AnnaEve: "Joyeux anniversaire Sarah, même si on s'est pas bcp vue t'es vraiment une super personne j'espère qu'on aura l'occasion de ce revoir et j'espère surtout que tu vas bien t'amuser en ce jour de fête \n" +
+            "-Æ",
   Kamy : "Miaou",
 };
 
