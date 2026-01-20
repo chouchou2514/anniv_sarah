@@ -4,9 +4,9 @@ const data = {
     title:"De la part de Cécilia 💖",
     subtitle:"Tu peux cliquer sur les images ma belle 😉 !",
     items:[
-      { image:"mood/soleil.jpeg", phrase:"Si t'étais un \"temps\" tu serais le soleil quand il fait froid\n.", letter:"tu sais le rayon tout chaud et orange qui vient te réchauffer en 2 sec et tu le regarde même s'il te crame les yeux tellement il est beau et qu'il te réconforte" },
+      { image:"mood/soleil.jpeg", phrase:"Si t'étais un \"temps\", tu serais le soleil quand il fait froid\n.", letter:"tu sais le rayon tout chaud et orange qui vient te réchauffer en 2 sec et tu le regarde même s'il te crame les yeux tellement il est beau et qu'il te réconforte" },
       { image:"mood/jimin.jpeg", phrase:"Si t'étais un membre des BTS, tu serais Jimin\n", letter:"t'es douce et mims et tu dirais pas non à Junkgook (#IlluminateToiMemeTuSais)\n" },
-      { image:"mood/fleur.jpeg", phrase:"Si tu étais une fleur tu serais la spider lilly🌷", letter:"elle est accueillante, pétillante et intense comme toi (ca se voit c'est une hypersensible)" },
+      { image:"mood/fleur.jpeg", phrase:"Si tu étais une fleur, tu serais la spider lilly🌷", letter:"elle est accueillante, pétillante et intense comme toi (ca se voit c'est une hypersensible)" },
       { image:"mood/helena.jpeg", phrase:"Si tu étais un perso de heated rivalry, tu serais Helena Rygg", letter:"toujours hypée par l'amour des autres, trop belle et parfaite et surtout la meilleure amie sur qui on peut toujours compter" }
     ]
   },
@@ -14,8 +14,15 @@ const data = {
     title:"De la part de Sarah ✨",
     subtitle:"Tu peux cliquer sur les images ma belle 😉 !",
     items:[
-      { image:"images/axel1.jpg", phrase:"Son plat préféré : des lasagnes réconfortantes.", letter:"Sarah, je te souhaite des moments délicieux et inoubliables cette année !" },
-      { image:"images/axel2.jpg", phrase:"L’ambiance qu’il crée autour de lui est chaleureuse et joyeuse.", letter:"Que cette journée soit remplie de sourires et d’amour !" }
+      { image:"mood/impressionnisme.jpeg", phrase:"Si tu étais un mouvement artistique, tu serais l'impressionnisme", letter:"Une palette de couleurs qui fait du bien aux yeux: il ne tient qu'à nous de chercher et trouver chaque détail !" },
+      { image:"mood/ile.jpeg", phrase:"Si tu étais un pays, tu serais une île tropicale", letter:"Un paysage chaud et accueillant, on se sent bien là-bas ! " },
+      { image:"mood/smoothie.jpeg", phrase:"Si tu étais une boisson, tu serais un smoothie frais au bord de la plage", letter:"La petite dose de bonheur qui vient parfaire le tout " },
+      { image:"mood/ourson.png", phrase:"Si tu étais une sucrerie, tu serais un ourson petit lu", letter:"Aussi bon et tendre à l'intérieur qu'à l'extérieur " },
+      { image:"mood/deux.png", phrase:"Si tu étais un chiffre, tu serais le 2", letter:"Un symbole de coopération et de sensibilité" },
+      { image:"mood/oracle.jpeg", phrase:"Si tu étais un jeu, tu serais un orcacle", letter:"Toujours là pour nous aider quand on en a besoin" },
+      { image:"mood/croissant.jpeg", phrase:"Si tu étais une odeur, tu serais les patisseries qui sortent du four", letter:"Spécialement tôt le matin quand on se balade dans la rue, ca donne envie de rentrer dans le boulangerie !" },
+      { image:"mood/chale.jpg", phrase:"Si tu étais un vêtement, tu serais un joli châle", letter:"Peu importe la saison, tu nous enveloppes d'une chaleur réconfortante" }
+
     ]
   }
 };
