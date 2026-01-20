@@ -100,7 +100,7 @@ const miniLetters = {
       "Joyeux anniversaire, j’espère que t’accompliras de grandes choses, à défaut de faire la vaisselle.\n" +
       "Je t’aime fort\n" +
       "Alexandre",
-    image: "images/trio.jpg"
+    image: "images/triov2.jpg"
   },
   Lucie: {
     text: "Je te souhaite un très heureux anniversaire, je t’envoie tout mon amour.\n" +
