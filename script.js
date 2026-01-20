@@ -92,7 +92,7 @@ const miniLetters = {
         "Je suis très fière de toi et je te fais plein plein de gros bisous !\n"+
         "Je te souhaite plein de bonheur dans ta petite vie bien débordé et oublie pas on va voir bruno mars !!!"+
         "Emma 💕",
-    image: "images/emmav2.jpg"
+    image: "images/emmav2cop.jpg"
   },
   Alexandre: {
     text: "À ma petite sœur à qui je ne démontre pas beaucoup d’affection, mais qui compte plus que tout :\n" +
