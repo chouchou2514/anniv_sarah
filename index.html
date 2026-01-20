@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anniversaire Sarah 🎉</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+
+  <!-- Fond paillettes -->
+  <div id="particles-js"></div>
+
+  <!-- PAGE D'ACCUEIL -->
+  <div class="page active" id="home">
+    <div class="center">
+      <h1>Tu ne connaîtrais pas quelqu’un dont c’est l’anniversaire ? 🎂</h1>
+      <button class="btn-primary" onclick="goToMain()">Moi 👀</button>
+      <button class="btn-secondary" onclick="openNotYou()">Pas moi 😅</button>
+      </div>
+</div>
+
+  <!-- PAGE PRINCIPALE / CHOIX PERSONNE -->
+  <div class="page" id="main">
+    <h1>Choisis une personne Sarah !🎁</h1>
+
+    <!-- CARTES PRINCIPALES -->
+    <div class="cards">
+      <div class="card" onclick="openPerson('cecilia')">De Cécilia 💌</div>
+      <div class="card" onclick="openPerson('sarah')">De Sarah 🌸</div>
+    </div>
+
+    <!-- PETITS MOTS -->
+    <h2 class="section-title fade-in">Des petits mots rien que pour toi 💌</h2>
+    <div class="letters-preview fade-in">
+
+      <div class="envelope" onclick="openMiniLetter('Cecilia')">
+        <img src="envelope.jpeg" alt="enveloppe Cecilia">
+        <span>Cécilia</span>
+      </div>
+
+      <div class="envelope" onclick="openMiniLetter('Sarah')">
+        <img src="envelope.jpeg" alt="enveloppe Sarah">
+        <span>Sarah</span>
+      </div>
+
+      <div class="envelope" onclick="openMiniLetter('MamanBenoit')">
+        <img src="envelope.jpeg" alt="enveloppe MamanBenoit">
+        <span>Maman & Benoit</span>
+      </div>
+
+      <div class="envelope" onclick="openMiniLetter('Gabriel')">
+        <img src="envelope.jpeg" alt="enveloppe Gabriel">
+        <span>Gabriel</span>
+      </div>
+
+      <div class="envelope" onclick="openMiniLetter('Matthias')">
+        <img src="envelope.jpeg" alt="enveloppe Matthias">
+        <span>Matthias</span>
+      </div>
+
+      <div class="envelope" onclick="openMiniLetter('Emma')">
+        <img src="envelope.jpeg" alt="enveloppe Emma">
+        <span>Emma</span>
+      </div>
+
+      <div class="envelope" onclick="openMiniLetter('AlexandreLucie')">
+        <img src="envelope.jpeg" alt="enveloppe AlexandreLucie">
+        <span>Alexandre & Lucie</span>
+      </div>
+
+      <div class="envelope" onclick="openMiniLetter('Chloe')">
+        <img src="envelope.jpeg" alt="enveloppe Chloe">
+        <span>Chloé</span>
+      </div>
+
+      <div class="envelope" onclick="openMiniLetter('Laura')">
+        <img src="envelope.jpeg" alt="enveloppe Laura">
+        <span>Laura</span>
+      </div>
+
+      <div class="envelope" onclick="openMiniLetter('Kamy')">
+        <img src="envelope.jpeg" alt="enveloppe Kamy">
+        <span>Kamy</span>
+      </div>
+
+    </div>
+
+    <!-- DIAPORAMA -->
+    <h2 class="section-title fade-in">Et des petits souvenirs 📸</h2>
+    <div class="slider fade-in">
+      <button onclick="prevSlide()">‹</button>
+      <img id="sliderImage" src="">
+      <button onclick="nextSlide()">›</button>
+    </div>
+
+  </div>
+
+  <!-- PAGE PERSONNE / MOODBOARD -->
+  <div class="page" id="person">
+    <h1 id="personTitle"></h1>
+    <p id="personSubtitle" class="subtitle"></p>
+
+    <h2 class="section-title">Moodboard personnel ✨</h2>
+    <div class="moodboard" id="moodboard"></div>
+
+    <!-- LETTRE AU CLIC -->
+    <div id="letterContainer" style="display:none;">
+      <p id="letterText" class="letter-content"></p>
+      <div class="back" onclick="closeLetter()">← Retour</div>
+    </div>
+
+    <div class="back" onclick="backToMain()">← Retour à toutes les rubriques</div>
+  </div>
+
+  <!-- MUSIQUE -->
+  <audio id="music" src="music.mp3" loop></audio>
+
+  <!-- SCRIPT JS -->
+  <script src="script.js"></script>
+
+  <!-- OVERLAY PETIT MOT -->
+  <div id="miniLetterOverlay" class="overlay" onclick="closeMiniLetter()">
+    <div class="mini-letter" onclick="event.stopPropagation()">
+      <p id="miniLetterText"></p>
+      <div class="close-btn" onclick="closeMiniLetter()">✕</div>
+    </div>
+  </div>
+  <!-- OVERLAY PAS MOI -->
+  <div id="notYouOverlay" class="overlay" onclick="closeNotYou()">
+    <div class="mini-letter" onclick="event.stopPropagation()">
+      <p>Si si… vérifie ton calendrier 😉</p>
+      <div class="close-btn" onclick="closeNotYou()">✕</div>
+    </div>
+  </div>
+</body>
+</html>

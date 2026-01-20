@@ -1,0 +1,183 @@
+// ===== DONNÉES PERSONNES =====
+const data = {
+  cecilia: {
+    title:"De la part de Cécilia 💖",
+    subtitle:"Tu peux cliquer sur les images ma belle 😉 !",
+    items:[
+      { image:"mood/soleil.jpeg", phrase:"Si t'étais un \"temps\" tu serais le soleil quand il fait froid\n.", letter:"tu sais le rayon tout chaud et orange qui vient te réchauffer en 2 sec et tu le regarde même s'il te crame les yeux tellement il est beau et qu'il te réconforte" },
+      { image:"mood/jimin.jpeg", phrase:"Si t'étais un membre des BTS, tu serais Jimin\n", letter:"t'es douce et mims et tu dirais pas non à Junkgook (#IlluminateToiMemeTuSais)\n" },
+      { image:"mood/fleur.jpeg", phrase:"Si tu étais une fleur tu serais la spider lilly🌷", letter:"elle est accueillante, pétillante et intense comme toi (ca se voit c'est une hypersensible)" },
+      { image:"mood/helena.jpeg", phrase:"Si tu étais un perso de heated rivalry, tu serais Helena Rygg", letter:"toujours hypée par l'amour des autres, trop belle et parfaite et surtout la meilleure amie sur qui on peut toujours compter" }
+    ]
+  },
+  sarah: {
+    title:"De la part de Sarah ✨",
+    subtitle:"Tu peux cliquer sur les images ma belle 😉 !",
+    items:[
+      { image:"images/axel1.jpg", phrase:"Son plat préféré : des lasagnes réconfortantes.", letter:"Sarah, je te souhaite des moments délicieux et inoubliables cette année !" },
+      { image:"images/axel2.jpg", phrase:"L’ambiance qu’il crée autour de lui est chaleureuse et joyeuse.", letter:"Que cette journée soit remplie de sourires et d’amour !" }
+    ]
+  }
+};
+
+//===== BOUTON PAS MOI =====
+function openNotYou() {
+  document.getElementById("notYouOverlay").classList.add("active");
+}
+
+function closeNotYou() {
+  document.getElementById("notYouOverlay").classList.remove("active");
+}
+
+// ===== PETITS MOTS =====
+// ===== PETITS MOTS (ENVELOPPES) =====
+const miniLetters = {
+  Cecilia: "Sarah 💖\n\nEncore une année passée ensemble et je me lasserai jamais de ca !\n" +
+      "Tu es ce petit frisson qu'on ressent dans la vie quand la joie dépasse l'élécrticité dans nos neuronnes et qu'elle s'échappe partout.\n" +
+      "Je veux ressentir ce frisson pour toujours, à jamais, forever, immer, 영원히.\n" +
+      "Tu es la plus belle chose qu'il me soit arrivé dans la vie, ma batterie sociale est et restera toujours pleine avec toi!\n" +
+      "Je t'aime et demeure tienne pour toujours.\n" +
+      "Joyeux anniversaire 💌!\n" +
+      "Cécilia",
+  Sarah: "Joyeux anniversaire Sarah 🎉\n\nProfite à fond de cette journée.",
+  MamanBenoit: "Une pensée pleine de soleil pour toi ☀️",
+  Gabriel: "Continue de briller comme tu sais si bien le faire ✨",
+  Emma: "Plein d’amour et de belles surprises aujourd’hui 💕",
+  AlexandreLucie: "Que cette année soit encore meilleure que la précédente !",
+  Chloe: "Coucou ma Sarah, je te souhaites un très bel anniversaire, tant de belles choses vécu à tes côtés, je suis fière des personnes que nous sommes aujourd’hui. \n" +
+      "Avec tous ces moments passés à tes côtés, et toutes les épreuves plus ou moins faciles, en tout cas sache que je t’aime fort, plein de bonnes choses 🥰❤️",
+  Laura: "Coucou Sarah !😘 \n\nJe te souhaite un joyeux Anniversaire !! La star a déjà 22 ans 🤯\n" +
+      "Entre team Verseau on se comprends, on a envie d’indépendance, de trouver sa voie et profiter de la viiiie (en vrai un peu comme tout le monde nan ?) \n" +
+      "Je t’adore trop trop même si on se voit peut, d’ailleurs faut qu on change vite ça !! Reste aussi magnifique et sincère, gentille et adorable ! Je te souhaite que tu bonheur parce que tu le mérite tellement 🩷 Gros bisous et passe une douce journée ☺️\n" +
+      "Laura",
+  Matthias: "Du Canada à l’Italie et surtout en passant par Mambouhans, bon anniversaire Pepette!\n" +
+      "Gros bisous de la part de Kamy aussi ! (C’est faux il mord).\n" +
+      " Je t’aime 😘\n" +
+      "Matthias",
+  Kamy : "Miaou",
+};
+
+
+
+// ===== DIAPORAMA =====
+const slides = ["images/17.jpeg","images/anniv.jpeg","images/17v2.jpeg","images/17v2.jpeg","images/matthias.jpg", "images/anna.jpg","images/laura.jpg","images/vielles.jpeg","images/bowling.jpeg","images/bac.jpg","images/cinev2.png","images/spa.jpeg","images/finneas.jpeg","images/bal.jpg","images/laurav2.jpg","images/monet.jpeg","images/bebe.jpg","images/montmartre.jpeg","images/caddie.jpg","images/monetv2.jpeg","images/moulinrouge.jpeg","images/cookie.jpg","images/nico.jpeg","images/lycee.jpg","images/pizza.jpeg","images/polaroid.jpeg"];
+let currentSlide = 0;
+function nextSlide(){ currentSlide=(currentSlide+1)%slides.length; document.getElementById("sliderImage").src=slides[currentSlide]; }
+function prevSlide(){ currentSlide=(currentSlide-1+slides.length)%slides.length; document.getElementById("sliderImage").src=slides[currentSlide]; }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const sliderImg = document.getElementById("sliderImage");
+  if (sliderImg && slides.length > 0) {
+    sliderImg.src = slides[0];
+  }
+});
+
+// ===== PARTICLES =====
+particlesJS('particles-js',{particles:{number:{value:80},color:{value:'#ffb5c2'},shape:{type:'circle'},opacity:{value:0.6},size:{value:4},move:{speed:1}}});
+
+// ===== BOUTON MOI =====
+function goToMain(){
+  document.getElementById('home').classList.remove('active');
+  document.getElementById('main').classList.add('active');
+  confetti({particleCount:200, spread:120, origin:{y:0.6}});
+  playMusic();
+}
+
+// ===== MUSIQUE =====
+function playMusic(){ const music=document.getElementById('music'); music.volume=0.4; music.play(); }
+
+// ===== RETOUR =====
+function backToMain(){
+  document.getElementById('person').classList.remove('active');
+  document.getElementById('main').classList.add('active');
+  document.getElementById('letterContainer').style.display='none';
+  document.getElementById('moodboard').style.display='grid';
+}
+
+// ===== OPEN PERSON =====
+function openPerson(id){
+  document.getElementById('main').classList.remove('active');
+  document.getElementById('person').classList.add('active');
+
+  const person = data[id];
+  document.getElementById('personTitle').innerText = person.title;
+  document.getElementById('personSubtitle').innerText = person.subtitle || "";
+
+  const mood = document.getElementById('moodboard');
+  mood.innerHTML = '';
+
+  person.items.forEach((item,index)=>{
+    const card = document.createElement('div');
+    card.classList.add('card');
+
+    const img = document.createElement('img');
+    img.src = item.image;
+
+    const p = document.createElement('p');
+    p.innerText = item.phrase; // le texte reste sous la photo
+
+    card.appendChild(img);
+    card.appendChild(p);
+
+    // Au clic sur la photo : ouvrir le petit encadré (sans son)
+    card.onclick = () => openMoodMiniLetter(item.letter);
+
+    card.style.opacity = 0;
+    card.style.transform = 'scale(0.9)';
+    setTimeout(()=>{
+        card.style.transition='all 0.8s ease';
+        card.style.opacity=1;
+        card.style.transform='scale(1)';
+    }, index*400);
+
+    mood.appendChild(card);
+});
+
+}
+
+// ===== OPEN / CLOSE LETTER =====
+const paperSound = new Audio("sounds/paper.mp3");
+function openLetter(text){
+  paperSound.currentTime=0; paperSound.play();
+  document.getElementById('moodboard').style.display='none';
+  const letterContainer=document.getElementById('letterContainer');
+  letterContainer.style.display='block';
+  document.getElementById('letterText').innerText=text;
+}
+function closeLetter(){ document.getElementById('letterContainer').style.display='none'; document.getElementById('moodboard').style.display='grid'; }
+
+function openMoodMiniLetter(text){
+  const mood = document.getElementById('moodboard');
+  const letterContainer = document.getElementById('letterContainer');
+  const letterText = document.getElementById('letterText');
+
+  // On cache les photos
+  mood.style.display = 'none';
+
+  // On injecte le texte
+  letterText.innerText = text;
+
+  // On affiche le conteneur
+  letterContainer.style.display = 'block';
+
+  // Petit bonus : on remonte en haut de page pour être sûr de voir le texte
+  window.scrollTo(0,0);
+}
+
+
+
+
+// ===== PETITS MOTS =====
+const miniLetterSound = new Audio("sound_letter.mp3");
+
+function openMiniLetter(name){
+  miniLetterSound.currentTime = 0;
+  miniLetterSound.play();
+
+  document.getElementById("miniLetterText").innerText = miniLetters[name];
+  document.getElementById("miniLetterOverlay").classList.add("active");
+}
+
+function closeMiniLetter(){
+  document.getElementById("miniLetterOverlay").classList.remove("active");
+}
