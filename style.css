@@ -140,6 +140,9 @@ button:hover { transform: scale(1.05); }
   position: relative;
   animation: popIn 0.5s ease;
   box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  max-height: 90vh;         /* La fenêtre ne dépasse pas l'écran */
+  overflow-y: auto;         /* Permet de défiler à l'intérieur de la lettre */
+  padding-bottom: 20px;
 }
 
 .mini-letter p {
@@ -147,6 +150,17 @@ button:hover { transform: scale(1.05); }
   transform: none;
   animation: none;
   font-size: 1rem;
+}
+
+/* Style pour la photo dans les enveloppes */
+#miniLetterImg {
+  display: block;
+  margin: 15px auto 0 auto; /* Centre la photo */
+  max-width: 80%;           /* Ne prend pas toute la largeur */
+  max-height: 250px;        /* LIMITE LA HAUTEUR pour éviter de trop scroller */
+  object-fit: contain;      /* Garde les proportions sans déformer */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .close-btn {
